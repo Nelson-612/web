@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nelson Wan | Software Engineer</title>
+  <meta
+    name="description"
+    content="Nelson Wan – Backend-focused software engineer building reliable APIs, real-time systems, and data-driven applications."
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -13,7 +17,7 @@
 <header class="navbar">
   <div class="container nav-inner">
     <h1 class="logo">Nelson Wan</h1>
-    <nav>
+    <nav aria-label="Primary navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
@@ -37,7 +41,7 @@
 
     <div class="hero-actions">
       <a href="#projects" class="btn primary">View Projects</a>
-      <a href="docs/Nelson_Resume.pdf" class="btn ghost" target="_blank">Resume</a>
+      <a href="/docs/Nelson_Resume.pdf" class="btn ghost" target="_blank">Resume</a>
     </div>
   </div>
 </section>
@@ -66,35 +70,63 @@
   <div class="container">
     <h3>Selected Projects</h3>
 
+    <!-- Web Scraper -->
     <div class="card project">
       <h4>Web Scraper</h4>
+      <span class="tech">
+        Python · BeautifulSoup · Requests · CSV · Automation
+      </span>
 
-  <span class="tech">
-    Python · BeautifulSoup · Requests · CSV · Automation
-  </span>
+      <p>
+        A Python-based web scraping tool designed to extract structured data
+        from HTML pages and transform it into clean, analyzable datasets.
+        Built with extensibility and reliability in mind.
+      </p>
 
-  <p>
-    A Python-based web scraping tool designed to extract structured data
-    from HTML pages and transform it into clean, analyzable datasets.
-    Built with extensibility and reliability in mind.
-  </p>
+      <ul>
+        <li>Resilient HTML parsing using BeautifulSoup</li>
+        <li>Modular scraping logic for reuse across sites</li>
+        <li>CSV export for downstream data analysis</li>
+        <li>Defensive error handling for network and parsing failures</li>
+      </ul>
 
-  <ul>
-    <li>Resilient HTML parsing using BeautifulSoup</li>
-    <li>Modular scraping logic for reuse across sites</li>
-    <li>CSV export for downstream data analysis</li>
-    <li>Defensive error handling for network and parsing failures</li>
-  </ul>
+      <a
+        href="https://github.com/Nelson-612/web-scraper"
+        target="_blank"
+        class="github-btn"
+      >
+        View on GitHub →
+      </a>
+    </div>
 
-  <a
-    href="https://github.com/Nelson-612/web-scraper"
-    target="_blank"
-    class="github-btn"
-  >
-    View on GitHub →
-  </a>
-</div>
+    <!-- KV Chat -->
+    <div class="card project">
+      <h4>KV Chat (WebSocket LLM with KV Cache)</h4>
+      <span class="tech">
+        Python · WebSockets · LLM · KV Cache · Sliding Window · Streaming
+      </span>
 
+      <p>
+        A real-time chat application that streams responses from a large language model
+        using WebSockets. Implements a KV cache and sliding window context to reduce
+        token recomputation and improve response efficiency.
+      </p>
+
+      <ul>
+        <li>WebSocket-based streaming for low-latency responses</li>
+        <li>KV cache to reuse transformer key-value states</li>
+        <li>Sliding window context management to control memory growth</li>
+        <li>Session-based chat handling with server-side state</li>
+      </ul>
+
+      <a
+        href="https://github.com/Nelson-612/kv_chat"
+        target="_blank"
+        class="github-btn"
+      >
+        View on GitHub →
+      </a>
+    </div>
 
     <!-- Student Grading System -->
     <div class="card project">
@@ -142,19 +174,19 @@
     <div class="card">
       <h4>Resume</h4>
       <p>Backend-focused resume highlighting projects and experience.</p>
-      <a href="./docs/Nelson_Resume.pdf" target="_blank" class="link">View PDF →</a>
+      <a href="/docs/Nelson_Resume.pdf" target="_blank" class="link">View PDF →</a>
     </div>
 
     <div class="card">
       <h4>Why Computer Science</h4>
       <p>Personal statement describing my transition into software engineering.</p>
-      <a href="./docs/Why_Computer_Science.pdf" target="_blank" class="link">Read →</a>
+      <a href="/docs/Why_Computer_Science.pdf" target="_blank" class="link">Read →</a>
     </div>
 
     <div class="card">
       <h4>Experience & STAR Stories</h4>
       <p>Behavioral examples from veterinary, wildlife, and research experience.</p>
-      <a href="./docs/STAR_Stories.pdf" target="_blank" class="link">View →</a>
+      <a href="/docs/STAR_Stories.pdf" target="_blank" class="link">View →</a>
     </div>
   </div>
 </section>
@@ -166,7 +198,13 @@
     <p>Email: <a href="mailto:wan.kal@northeastern.edu">wan.kal@northeastern.edu</a></p>
     <p>
       <a href="https://github.com/Nelson-612" target="_blank">GitHub</a> ·
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a
+        href="https://www.linkedin.com/in/nelson-wan/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
     </p>
   </div>
 </section>
