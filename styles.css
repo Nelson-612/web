@@ -1,0 +1,301 @@
+/* ================================
+   VARIABLES
+================================ */
+:root {
+  --bg: #f8fafc;
+  --subtle: #f1f5f9;
+  --card: #ffffff;
+  --primary: #2563eb;
+  --text: #0f172a;
+  --muted: #475569;
+  --border: #e5e7eb;
+}
+
+/* ================================
+   RESET
+================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================================
+   GLOBAL
+================================ */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+}
+
+/* ================================
+   LAYOUT
+================================ */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+.container.narrow {
+  max-width: 760px;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section.subtle {
+  background: var(--subtle);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 1.4rem;
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* ================================
+   HERO
+================================ */
+.hero {
+  background: linear-gradient(135deg, #2563eb, #6366f1);
+  color: white;
+}
+
+.hero-inner {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin: auto;
+  opacity: 0.95;
+}
+
+.hero-actions {
+  margin-top: 2.5rem;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.8rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn.primary {
+  background: white;
+  color: var(--primary);
+}
+
+.btn.ghost {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+h3 {
+  font-size: 2.1rem;
+  margin-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   PROJECT CONTENT
+================================ */
+.project {
+  cursor: default;
+}
+
+.tech {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
+.card ul {
+  margin: 0.8rem 0 1rem 1.2rem;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* ================================
+   GITHUB BUTTON (SAFE)
+================================ */
+.github-btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.github-btn:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* ================================
+   SKILLS
+================================ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skills-grid div {
+  background: var(--card);
+  border-radius: 14px;
+  padding: 1.4rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ================================
+   LINKS
+================================ */
+.link {
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+/* Project card styling */
+.project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+.project-card p {
+  line-height: 1.6;
+  color: #444;
+}
+
+.tech-stack {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+/* ================================
+   RESPONSIVE
+================================ */
