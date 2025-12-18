@@ -263,3 +263,46 @@ footer {
     padding: 0 1.5rem;
   }
 }
+
+/* ================================
+   FEATURED PROJECT (TOP PROJECT)
+================================ */
+.featured-project {
+  border-left: 5px solid var(--primary);
+  padding: 2.4rem;
+}
+
+/* tighten typography inside project cards */
+.project p {
+  margin-top: 0.6rem;
+  color: var(--muted);
+}
+
+.project strong {
+  color: var(--text);
+}
+
+/* tech stack line inside featured project */
+.featured-project .tech-stack {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* featured GitHub link */
+.featured-project .project-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.featured-project .project-link:hover {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
