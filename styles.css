@@ -198,7 +198,7 @@ h4 {
 }
 
 /* ================================
-   GITHUB LINK
+   GITHUB LINK (BUTTON STYLE)
 ================================ */
 .github-btn {
   display: inline-block;
@@ -216,6 +216,21 @@ h4 {
   background: var(--primary);
   color: white;
   border-color: var(--primary);
+}
+
+/* ================================
+   PROJECT LINKS ROW (NEW)
+   Makes GitHub + Live Demo buttons align nicely
+================================ */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.9rem;
+}
+
+.project-links .github-btn {
+  margin-top: 0; /* removes extra top margin inside the flex row */
 }
 
 /* ================================
