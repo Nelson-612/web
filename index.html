@@ -41,7 +41,7 @@
 
     <div class="hero-actions">
       <a href="#projects" class="btn primary">View Projects</a>
-      <a href="/docs/Nelson_Resume.pdf" class="btn ghost" target="_blank">Resume</a>
+      <a href="docs/Nelson_Resume.pdf" class="btn ghost" target="_blank">Resume</a>
     </div>
   </div>
 </section>
@@ -70,21 +70,19 @@
   <div class="container">
     <h3>Selected Projects</h3>
 
-    <!-- Featured Project -->
+    <!-- Animal Species Classification -->
     <div class="card project featured-project">
       <h3>Animal Species Classification (Deep Learning)</h3>
 
       <p>
         Built a multi-class image classification system to predict animal species
         from images using transfer learning with a pre-trained VGG-16 convolutional
-        neural network. The model was trained on ~26,000 images across 10 classes
-        and evaluated using accuracy, precision/recall, and a confusion matrix.
+        neural network.
       </p>
 
       <p>
         Achieved <strong>74% test accuracy</strong> and performed class-level error
-        analysis to identify systematic misclassification among visually similar
-        animals such as cow, sheep, and horse.
+        analysis to identify misclassification among visually similar animals.
       </p>
 
       <p class="tech-stack">
@@ -101,24 +99,23 @@
       </a>
     </div>
 
-    <!-- NEW: Pet Health Risk Predictor -->
+    <!-- Pet Health Risk Predictor -->
     <div class="card project">
       <h4>Pet Health Risk Predictor (Full-Stack)</h4>
       <span class="tech">
-        FastAPI · Pydantic · REST API · HTML/CSS/JS · Explainable Rules
+        FastAPI · Pydantic · REST API · HTML/CSS/JS
       </span>
 
       <p>
-        A full-stack web application that estimates pet health risks (obesity, dental, and joint)
-        based on user inputs. The backend exposes a FastAPI API with validated Pydantic schemas,
-        and the frontend visualizes scores with clear reasons and recommended care actions.
+        Full-stack web application that estimates pet health risks based on user input.
+        Backend exposes validated FastAPI endpoints and frontend displays explainable results.
       </p>
 
       <ul>
-        <li>FastAPI backend with input validation and structured JSON responses</li>
-        <li>Frontend fetches live predictions and renders risk cards + progress bars</li>
-        <li>Explainable “reasons” for each risk category to improve transparency</li>
-        <li>Designed for real-world usability with clear UI and error handling</li>
+        <li>FastAPI backend with structured JSON responses</li>
+        <li>Frontend fetches live predictions and visualizes risk scores</li>
+        <li>Explainable rules for transparency and usability</li>
+        <li>Robust error handling for invalid inputs</li>
       </ul>
 
       <div class="project-links">
@@ -146,20 +143,19 @@
     <div class="card project">
       <h4>Web Scraper</h4>
       <span class="tech">
-        Python · BeautifulSoup · Requests · CSV · Automation
+        Python · BeautifulSoup · Requests · CSV
       </span>
 
       <p>
-        A Python-based web scraping tool designed to extract structured data
-        from HTML pages and transform it into clean, analyzable datasets.
-        Built with extensibility and reliability in mind.
+        Python-based scraper that extracts structured data from web pages
+        and exports clean datasets for analysis.
       </p>
 
       <ul>
-        <li>Resilient HTML parsing using BeautifulSoup</li>
-        <li>Modular scraping logic for reuse across sites</li>
-        <li>CSV export for downstream data analysis</li>
-        <li>Defensive error handling for network and parsing failures</li>
+        <li>HTML parsing with BeautifulSoup</li>
+        <li>Reusable, modular scraping logic</li>
+        <li>CSV export for downstream processing</li>
+        <li>Error handling for network failures</li>
       </ul>
 
       <a
@@ -176,20 +172,19 @@
     <div class="card project">
       <h4>KV Chat (WebSocket LLM with KV Cache)</h4>
       <span class="tech">
-        Python · WebSockets · LLM · KV Cache · Sliding Window · Streaming
+        Python · WebSockets · LLM · KV Cache · Streaming
       </span>
 
       <p>
-        A real-time chat application that streams responses from a large language model
-        using WebSockets. Implements a KV cache and sliding window context to reduce
-        token recomputation and improve response efficiency.
+        Real-time chat application streaming LLM responses via WebSockets.
+        Uses KV cache and sliding window context to reduce token recomputation.
       </p>
 
       <ul>
-        <li>WebSocket-based streaming for low-latency responses</li>
-        <li>KV cache to reuse transformer key-value states</li>
-        <li>Sliding window context management to control memory growth</li>
-        <li>Session-based chat handling with server-side state</li>
+        <li>Low-latency WebSocket streaming</li>
+        <li>KV cache reuse for efficiency</li>
+        <li>Sliding window context management</li>
+        <li>Session-based state handling</li>
       </ul>
 
       <a
@@ -202,27 +197,6 @@
       </a>
     </div>
 
-    <!-- Student Grading System -->
-    <div class="card project">
-      <h4>Student Grading Management System</h4>
-      <span class="tech">
-        Python · JSON · Object-Oriented Design · unittest · matplotlib
-      </span>
-
-      <p>
-        A command-line application that manages students, courses, and grades
-        with persistent storage, automated testing, and data visualization.
-        Designed with clean architecture and robustness in mind.
-      </p>
-
-      <ul>
-        <li>Class-based architecture using OOP principles</li>
-        <li>Full CRUD functionality with JSON persistence</li>
-        <li>Unit testing with unittest to ensure correctness</li>
-        <li>Grade distribution visualization using matplotlib</li>
-      </ul>
-    </div>
-
   </div>
 </section>
 
@@ -232,9 +206,9 @@
     <h3>Skills</h3>
     <div class="skills-grid">
       <div>Python · Java · SQL</div>
-      <div>Spring Boot · REST APIs</div>
+      <div>FastAPI · REST APIs</div>
       <div>MySQL · MongoDB</div>
-      <div>Git · Docker · Maven</div>
+      <div>Git · Docker</div>
       <div>unittest · JUnit</div>
     </div>
   </div>
@@ -248,7 +222,7 @@
     <div class="card">
       <h4>Resume</h4>
       <p>Backend-focused resume highlighting projects and experience.</p>
-      <a href="/web/docs/Nelson_Resume.pdf" target="_blank" class="link">View PDF →</a>
+      <a href="docs/Nelson_Resume.pdf" target="_blank" class="link">View PDF →</a>
     </div>
 
     <div class="card">
@@ -259,7 +233,7 @@
 
     <div class="card">
       <h4>Experience & STAR Stories</h4>
-      <p>Behavioral examples from veterinary, wildlife, and research experience.</p>
+      <p>Behavioral examples from professional and academic experience.</p>
       <a href="docs/STAR_Stories.pdf" target="_blank" class="link">View →</a>
     </div>
   </div>
@@ -271,14 +245,8 @@
     <h3>Contact</h3>
     <p>Email: <a href="mailto:wan.kal@northeastern.edu">wan.kal@northeastern.edu</a></p>
     <p>
-      <a href="https://github.com/Nelson-612" target="_blank" rel="noopener noreferrer">GitHub</a> ·
-      <a
-        href="https://www.linkedin.com/in/nelson-wan/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
+      <a href="https://github.com/Nelson-612" target="_blank">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/nelson-wan/" target="_blank">LinkedIn</a>
     </p>
   </div>
 </section>
